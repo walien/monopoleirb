@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mnpe="http://monopoleirb.gcc.com">
+
+	<xsd:import namespace="http://monopoleirb.gcc.com"
+		schemaLocation="monopoleirb_types.xsd" />
+
+	<xs:element name="configuration">
+		<xs:complexType>
+			<xsd:all>
+				<!-- SQUARES  -->
+				<xsd:element name="squares" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence minOccurs="0" maxOccurs="unbounded">
+							<xsd:element name="departure-square" minOccurs="0"
+								maxOccurs="unbounded" type="mnpe:type_departure-square" />
+							<xsd:element name="field" minOccurs="0" maxOccurs="unbounded"
+								type="mnpe:type_field" />
+							<xsd:element name="train-station" minOccurs="0"
+								maxOccurs="unbounded" type="mnpe:type_train-station" />
+							<xsd:element name="public-service" minOccurs="0"
+								maxOccurs="unbounded" type="mnpe:type_public-service" />
+							<xsd:element name="tax-square" minOccurs="0"
+								maxOccurs="unbounded" type="mnpe:type_tax-square" />
+							<xsd:element name="jail" minOccurs="0" maxOccurs="unbounded"
+								type="mnpe:type_jail" />
+							<xsd:element name="chance-square" minOccurs="0"
+								maxOccurs="unbounded" type="mnpe:type_chance-square" />
+							<xsd:element name="community-chest" minOccurs="0"
+								maxOccurs="unbounded" type="mnpe:type_community-chest" />
+							<xsd:element name="free-park" minOccurs="0"
+								maxOccurs="unbounded" type="mnpe:type_free-park" />
+						</xs:sequence>
+					</xs:complexType>
+				</xsd:element>
+				<!-- FAMILIES -->
+				<xsd:element name="families" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xsd:element name="family" minOccurs="0" maxOccurs="unbounded"
+								type="mnpe:type_family" />
+						</xs:sequence>
+					</xs:complexType>
+				</xsd:element>
+				<!--  PLAYERS -->
+				<xsd:element name="players" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xsd:element name="player" minOccurs="0" maxOccurs="unbounded"
+								type="mnpe:type_player" />
+						</xs:sequence>
+					</xs:complexType>
+				</xsd:element>
+				<!--  RULES -->
+				<xsd:element name="rules" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xsd:element name="rule" minOccurs="0" maxOccurs="unbounded"
+								type="mnpe:type_rule" />
+						</xs:sequence>
+					</xs:complexType>
+				</xsd:element>				
+				<!--  CHANCE CARDS -->
+				<xsd:element name="chance-cards" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xsd:element name="card" minOccurs="0" maxOccurs="unbounded"
+								type="mnpe:type_card" />
+						</xs:sequence>
+					</xs:complexType>
+				</xsd:element>
+				<!--  COMMUNITY CHEST CARDS -->
+				<xsd:element name="community-chest-cards" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xsd:element name="card" minOccurs="0" maxOccurs="unbounded"
+								type="mnpe:type_card" />
+						</xs:sequence>
+					</xs:complexType>
+				</xsd:element>
+			</xsd:all>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

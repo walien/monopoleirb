@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://monopoleirb.gcc.com"
+	xmlns:mnpe="http://monopoleirb.gcc.com">
+
+	<!-- Square types -->
+	<xs:complexType name="type_departure-square">
+		<xs:attribute name="name" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="type_field">
+		<xs:all>
+			<xs:element name="mortgage-policy" type="mnpe:type_mortgage-policy"
+				maxOccurs="1" />
+			<xs:element name="rent-policy" type="mnpe:type_rent-policy"
+				maxOccurs="1" />
+			<xs:element name="build-policy" type="mnpe:type_build-policy"
+				maxOccurs="1" />
+		</xs:all>
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="family" type="xs:integer" use="required" />
+		<xs:attribute name="buyingPrice" type="xs:integer" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="type_public-service">
+		<xs:all>
+			<xs:element name="mortgage-policy" type="mnpe:type_mortgage-policy"
+				maxOccurs="1" />
+		</xs:all>
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="family" type="xs:integer" use="required" />
+		<xs:attribute name="buyingPrice" type="xs:integer" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="type_train-station">
+		<xs:all>
+			<xs:element name="mortgage-policy" type="mnpe:type_mortgage-policy"
+				maxOccurs="1" />
+			<xs:element name="rent-policy" type="mnpe:type_rent-policy_train"
+				maxOccurs="1" />
+		</xs:all>
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="family" type="xs:integer" use="required" />
+		<xs:attribute name="buyingPrice" type="xs:integer" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="type_community-chest">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType" />
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="type_chance-square">
+		<xs:complexContent>
+			<xs:restriction base="xs:anyType" />
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="type_jail">
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="simpleVisit" type="xs:boolean" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="type_free-park">
+		<xs:attribute name="name" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="type_tax-square">
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="taxAmount" type="xs:integer" use="required" />
+	</xs:complexType>
+
+	<!-- Family -->
+	<xs:complexType name="type_family">
+		<xs:attribute name="id" type="xs:integer" use="required" />
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="numberOfProperties" type="xs:integer"
+			use="required" />
+	</xs:complexType>
+
+	<!-- Player -->
+	<xs:complexType name="type_player">
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="bank" type="xs:integer" use="required" />
+	</xs:complexType>
+
+	<!-- Rule -->
+	<xs:complexType name="type_rule">
+		<xs:attribute name="class" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<!-- Card -->
+	<xs:complexType name="type_card">
+		<xs:attribute name="class" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<!-- Sub types -->
+	<xs:complexType name="type_mortgage-policy">
+		<xs:attribute name="amount" type="xs:integer" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="type_build-policy">
+		<xs:attribute name="housePrice" type="xs:integer" use="required" />
+		<xs:attribute name="hotelPrice" type="xs:integer" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="type_rent-policy">
+		<xs:attribute name="rent-policy1" type="xs:integer" use="required" />
+		<xs:attribute name="rent-policy2" type="xs:integer" use="required" />
+		<xs:attribute name="rent-policy3" type="xs:integer" use="required" />
+		<xs:attribute name="rent-policy4" type="xs:integer" use="required" />
+		<xs:attribute name="rent-policy5" type="xs:integer" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="type_rent-policy_train">
+		<xs:attribute name="rentingPrice" type="xs:integer" use="required" />
+	</xs:complexType>
+
+</xs:schema>

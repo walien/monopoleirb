@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<players>
+		<player name="Elian" bank="25000" />
+		<player name="Joseph" bank="25000" />
+		<player name="Hugues" bank="25000" />
+		<player name="Zoe" bank="25000" />
+	</players>
+
+	<families>
+		<family id="1" name="roseFamily" numberOfProperties="2" />
+		<family id="2" name="cyanFamily" numberOfProperties="3" />
+		<family id="3" name="violetFamily" numberOfProperties="3" />
+		<family id="4" name="orangeFamily" numberOfProperties="3" />
+		<family id="5" name="redFamily" numberOfProperties="3" />
+		<family id="6" name="yellowFamily" numberOfProperties="3" />
+		<family id="7" name="greenFamily" numberOfProperties="3" />
+		<family id="8" name="blueFamily" numberOfProperties="2" />
+		<family id="9" name="trainStationFamily" numberOfProperties="4" />
+		<family id="10" name="publicServicesFamily" numberOfProperties="2" />
+	</families>
+
+	<squares>
+		<departure-square name="Depart" />
+		<field name="Boulevard de Belleville" family="1" buyingPrice="6000">
+			<mortgage-policy amount="4000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<community-chest />
+		<field name="Rue Lecourbe" family="1" buyingPrice="6000">
+			<mortgage-policy amount="4000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<tax-square name="Impôts sur le revenu" taxAmount="15000" />
+		<train-station name="Gare Montparnasse" family="9"
+			buyingPrice="20000">
+			<mortgage-policy amount="4000" />
+			<rent-policy rentingPrice="2500" />
+		</train-station>
+		<field name="Rue de Vaugirard" family="2" buyingPrice="8000">
+			<mortgage-policy amount="8000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<chance-square />
+		<field name="Rue de Courcelles" family="2" buyingPrice="10000">
+			<mortgage-policy amount="8000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<field name="Avenue de la République" family="2" buyingPrice="12000">
+			<mortgage-policy amount="8000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<jail name="Simple Visite" simpleVisit="true" />
+		<field name="Boulevard de la Villette" family="3" buyingPrice="14000">
+			<mortgage-policy amount="10000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<public-service name="EDF" family="10" buyingPrice="15000">
+			<mortgage-policy amount="4000" />
+		</public-service>
+		<field name="Avenue de Neuilly" family="3" buyingPrice="14000">
+			<mortgage-policy amount="10000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<field name="Rue de Paradis" family="3" buyingPrice="16000">
+			<mortgage-policy amount="10000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<train-station name="Gare de Lyon" family="9"
+			buyingPrice="20000">
+			<mortgage-policy amount="10000" />
+			<rent-policy rentingPrice="2500" />
+		</train-station>
+		<field name="Avenue Mozart" family="4" buyingPrice="18000">
+			<mortgage-policy amount="14000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<community-chest />
+		<field name="Boulevard Saint-Michel" family="4" buyingPrice="18000">
+			<mortgage-policy amount="14000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<field name="Place Pigale" family="4" buyingPrice="20000">
+			<mortgage-policy amount="14000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<free-park name="Parc Gratuit" />
+		<field name="Avenue Matignon" family="5" buyingPrice="22000">
+			<mortgage-policy amount="18000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<chance-square />
+		<field name="Boulevard de Malesherbes" family="5" buyingPrice="22000">
+			<mortgage-policy amount="18000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<field name="Avenue Henri-Martin" family="5" buyingPrice="22000">
+			<mortgage-policy amount="18000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<train-station name="Gare du Nord" family="9"
+			buyingPrice="20000">
+			<mortgage-policy amount="18000" />
+			<rent-policy rentingPrice="2500" />
+		</train-station>
+		<field name="Faubourg Saint-Honoré" family="6" buyingPrice="26000">
+			<mortgage-policy amount="20000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<field name="Place de la Bourse" family="6" buyingPrice="26000">
+			<mortgage-policy amount="20000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<public-service name="Veolia" family="10" buyingPrice="15000">
+			<mortgage-policy amount="14000" />
+		</public-service>
+		<field name="Rue de la Fayette" family="6" buyingPrice="28000">
+			<mortgage-policy amount="20000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<jail name="Prison" simpleVisit="false" />
+		<field name="Avenue de Breteuil" family="7" buyingPrice="30000">
+			<mortgage-policy amount="25000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<field name="Avenue Foch" family="7" buyingPrice="30000">
+			<mortgage-policy amount="25000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<community-chest />
+		<field name="Boulevard des Capucines" family="7" buyingPrice="32000">
+			<mortgage-policy amount="25000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<train-station name="Gare Saint-Lazare" family="9"
+			buyingPrice="20000">
+			<mortgage-policy amount="25000" />
+			<rent-policy rentingPrice="2500" />
+		</train-station>
+		<chance-square />
+		<field name="Avenue des Champs Elysées" family="8" buyingPrice="35000">
+			<mortgage-policy amount="28000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+		<tax-square name="Taxe de luxe" taxAmount="10000" />
+		<field name="Rue de la Paix" family="8" buyingPrice="40000">
+			<mortgage-policy amount="28000" />
+			<build-policy housePrice="1000" hotelPrice="2000" />
+			<rent-policy rent-policy1="2500" rent-policy2="5000"
+				rent-policy3="10000" rent-policy4="20000" rent-policy5="50000" />
+		</field>
+	</squares>
+
+	<rules>
+		<rule class="com.gcc.monopoleirb.core.rules.impl.DepartureRule" />
+		<rule class="com.gcc.monopoleirb.core.rules.impl.DiceDoubleRule" />
+		<rule class="com.gcc.monopoleirb.core.rules.impl.GoingInJailRule" />
+		<rule class="com.gcc.monopoleirb.core.rules.impl.BuildingRule" />
+		<rule class="com.gcc.monopoleirb.core.rules.impl.BuyingAPropertyRule" />
+		<rule class="com.gcc.monopoleirb.core.rules.impl.ChanceSquareRule" />
+		<rule class="com.gcc.monopoleirb.core.rules.impl.CommunityChestSquareRule" />
+		<rule class="com.gcc.monopoleirb.core.rules.impl.FreeParkSquareRule" />
+		<rule class="com.gcc.monopoleirb.core.rules.impl.RentingAPropertyRule" />
+		<rule class="com.gcc.monopoleirb.core.rules.impl.TaxSquareRule" />
+	</rules>
+
+	<chance-cards>
+		<card class="com.gcc.monopoleirb.core.cards.chance.GetOutFromJailChanceCard" />
+		<card
+			class="com.gcc.monopoleirb.core.cards.chance.WinTheFirstBeautyPriceCard" />
+	</chance-cards>
+
+</configuration>
